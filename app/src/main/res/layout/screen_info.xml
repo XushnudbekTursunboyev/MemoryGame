@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#282752"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/gita_logo"
+        android:scaleType="centerCrop"
+        android:layout_height="300dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="32dp"
+        android:layout_margin="16dp"
+        android:id="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_back"
+        android:layout_height="32dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:id="@+id/tv_info"
+        android:textColor="@color/white"
+        android:text="Assalomu alaykum hurmatli Memory game foydalanuchilari! Bu ilova Xushnudbek Tursunboyev tomonidan Gita dasturchilar akademiyasidagi Android Bootcamp kursi davomida yaratilgan!"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_info"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:id="@+id/tv_infoApp"
+        android:textColor="@color/white"
+        android:text="Qisqacha ilova haqida:\n   Sizga tanlagan levelingizga qarab kartalar beriladi. \n   Sizning vazifangiz barcha ikkita bir xil kartalarni topish.\n   Agar berilgan vaqt ichida vazifani to'liq bajara olmasangiz yutqazasiz!"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Telegram: @Xushnudbek_Developer"
+        android:textColor="#4AA1E6"
+        android:textSize="19sp"
+        android:id="@+id/telegram"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_infoApp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
